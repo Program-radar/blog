@@ -1,0 +1,112 @@
+<!-- base html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Box Icons -->
+        <link
+            href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <!--Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Main Css-->
+        <link rel="stylesheet" href="{% static 'base\\main.css' %}" />
+        {% block page_static %} {% endblock page_static %}
+    </head>
+    <body>
+        <div class="content" id="contentId">
+            <!-- header nav -->
+            <div class="top_header" id="topHeader">
+                <ul class="menu" id="menubar">
+                    <li class="menu_item"><a href="#">Home</a></li>
+                    <li class="menu_item"><a href="#">Articles</a></li>
+                    <li class="menu_item"><a href="#">Top Writers</a></li>
+                    <li class="menu_item"><a href="#">About</a></li>
+                    <li class="menu_item">
+                        <a href="#" class="important_item nav_signin"
+                            >sign in</a
+                        >
+                    </li>
+                </ul>
+                <div class="logo"><a href="#">Mehran Blog</a></div>
+                <div class="sign_in">
+                    <a href="#" class="important_item">Sign In</a>
+                </div>
+                <div class="menu_toggle">
+                    <i class="bx bx-menu" id="toggle_menu"></i>
+                </div>
+            </div>
+            <div class="header_main" id="page_header"></div>
+
+            <!-- main content-->
+            <main class="main" id="main_page">
+                {% block page_content %} {% endblock page_content %}
+            </main>
+
+            <!-- footer -->
+            <footer class="footer" id="page_footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <h4>Useful links</h4>
+                            <ul class="useful_links">
+                                <li><a href="#">Guide</a></li>
+                                <li><a href="#">Being Admin</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">How to write Articles ?</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <h4>Stay With Us</h4>
+                            <ul class="contact">
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Terms Of Use</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <h4>Follow Us</h4>
+                            <ul class="social_media">
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bxl-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bxl-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bxl-telegram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bx bxl-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="copy_right">
+                    <p>&copy;2021 Mehran</p>
+                </div>
+            </footer>
+        </div>
+        <!-- Main Script File -->
+        <script src="{% static 'base\\main.js' %}"></script>
+    </body>
+</html>

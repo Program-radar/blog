@@ -1,14 +1,46 @@
-{% extends 'blogging\\base.html' %} {% block page_static %}
+{% extends 'blogging\\base.html' %}
+{% load static %}
+
+{% block page_static %}
+<link rel="stylesheet" href="{% static 'index\\main.css' %}">
 <title>Mehran Blog</title>
-{% endblock page_static %} {% block page_content %}
-<div class="post-entry" style="height: 400px">
-    {% for post in posts %}
-    <h2>{{ post.title }}</h2>
-    <p class="article-body">{{post.body}}</p>
-    {% empty %}
-    <h2>
-        Sorry, There is no Article available right now!<br />Please be patient
-    </h2>
-    {% endfor %}
-</div>
+{% endblock page_static %}
+
+{% block page_content %}
+                <div class="container header">
+                    <div class="row">
+                        <div class="col-2 first_item_header">
+                            <div class="header_writing">
+                                <h1>
+                                    write great articles<br />
+                                    read great articles
+                                </h1>
+                            </div>
+                            <div class="get_started">
+                                <a href="#">
+                                    <button
+                                        type="button"
+                                        class="important_reverse"
+                                    >
+                                        get started
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <!-- header svg -->
+                            <div class="header_illustration">
+                                <img
+                                    src="{% static 'index\\header_svg\\header.svg' %}"
+                                    alt="Header"
+                                    class="header_svg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
 {% endblock page_content %}
+
+{% block script %}
+        <script src="{% static 'index\\main.js' %}"></script>
+{% endblock script %}

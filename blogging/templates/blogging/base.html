@@ -11,10 +11,10 @@
             href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
             rel="stylesheet"
         />
-        <!--Google Fonts -->
+        <!-- font -->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300&display=swap"
             rel="stylesheet"
         />
         <!-- Main Css-->
@@ -22,9 +22,9 @@
         {% block page_static %} {% endblock page_static %}
     </head>
     <body>
-        <div class="content" id="contentId">
+        <div class="content">
             <!-- header nav -->
-            <div class="top_header" id="topHeader">
+            <header class="top_header" id="topHeader">
                 <ul class="menu" id="menubar">
                     <li class="menu_item"><a href="#">Home</a></li>
                     <li class="menu_item"><a href="#">Articles</a></li>
@@ -43,8 +43,7 @@
                 <div class="menu_toggle">
                     <i class="bx bx-menu" id="toggle_menu"></i>
                 </div>
-            </div>
-            <div class="header_main" id="page_header"></div>
+            </header>
 
             <!-- main content-->
             <main class="main" id="main_page">
@@ -52,7 +51,7 @@
             </main>
 
             <!-- footer -->
-            <footer class="footer" id="page_footer">
+            <footer class="footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-3">

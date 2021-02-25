@@ -1,0 +1,8 @@
+{% extends 'blogging\\base.html' %} {% block page_static %}
+<title>{{ article }}</title>
+{% endblock page_static %} {% block page_content %}
+<div style="height: 500px">
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.body }}</p>
+</div>
+{% endblock page_content %}

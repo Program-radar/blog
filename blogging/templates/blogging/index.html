@@ -1,8 +1,8 @@
-{% extends 'blogging\\base.html' %}
+{% extends 'blogging/base.html' %}
 {% load static %}
 
 {% block page_static %}
-<link rel="stylesheet" href="{% static 'index\\main.css' %}">
+<link rel="stylesheet" href="{% static 'index/main.css' %}">
 <title>Mehran Blog</title>
 {% endblock page_static %}
 
@@ -31,7 +31,7 @@
                             <!-- header svg -->
                             <div class="header_illustration">
                                 <img
-                                    src="{% static 'index\\header_svg\\header.svg' %}"
+                                    src="{% static 'index/header_svg/header.svg' %}"
                                     alt="Header"
                                     class="header_svg"
                                 />
@@ -42,5 +42,5 @@
 {% endblock page_content %}
 
 {% block script %}
-        <script src="{% static 'index\\main.js' %}"></script>
+        <script src="{% static 'index/main.js' %}"></script>
 {% endblock script %}

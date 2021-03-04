@@ -1,8 +1,18 @@
-{% extends 'blogging\\base.html' %} {% block page_static %}
-<title>{{ article }}</title>
-{% endblock page_static %} {% block page_content %}
-<div style="height: 500px">
-    <h2>{{ article.title }}</h2>
-    <p>{{ article.body }}</p>
-</div>
+{% extends 'blogging/base.html' %} 
+{% load static %}
+
+{% block page_static %}
+        <link rel="stylesheet" href="{% static 'article_detail/main.css' %}">
+        <title>{{ articles }}</title>
+{% endblock page_static %} 
+
+{% block page_content %}
+                <div class="container article">
+                    <h1 class="title">{{ articles.title }}</h1>
+                    <div class="article_body">{{ articles.body }}</div>
+                </div>
 {% endblock page_content %}
+
+{% block script %}
+        <script src="{% static 'article_detail/main.js' %}"></script>
+{% endblock script %}

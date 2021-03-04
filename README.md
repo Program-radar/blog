@@ -1,6 +1,6 @@
 # Blog App Build By Mehran
 
-This is a blog app just like medium where you can write articles and read articles.
+این یک برنامه وبلاگ دقیقاً مانند مدیوم است که در آن می توانید مقاله بنویسید و مقاله بخوانید.
 
-By Mehran ---> FullStack Developer
-Follow My page on instagram --> instgaram.com/programming_radar
+توسط مهران ---> توسعه دهنده فول استک
+صفحه من را در اینستاگرام دنبال کنید -> instgaram.com/programming_radar

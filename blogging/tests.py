@@ -33,3 +33,11 @@ class BlogTests(TestCase):
         response = self.client.get(reverse('index'))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'blogging/index.html')
+
+    def test_article_detail(self):
+        response = self.client.get('/posts/1')
+        no_response = self.client.get('/posts/10000/')
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(no_response.status_code, 404)
+        self.assertContains(response, 'this is title')
+        self.assertTemplateUsed(response, 'blogging/article_detail.html')

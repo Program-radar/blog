@@ -11,6 +11,7 @@
                     <h1 class="title">{{ articles.title }}</h1>
                     <div class="article_body">{{ articles.body }}</div>
                 </div>
+                <a href="{% url 'edit_post' articles.pk %}" style="color: blue;">+ Edit Article</a>
 {% endblock page_content %}
 
 {% block script %}

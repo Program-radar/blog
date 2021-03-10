@@ -12,6 +12,8 @@
                     <div class="article_body">{{ articles.body }}</div>
                 </div>
                 <a href="{% url 'edit_post' articles.pk %}" style="color: blue;">+ Edit Article</a>
+                <br/>
+                <a href="{% url 'delete_post' articles.pk %}" style="color: blue;">+ Delete Article</a>
 {% endblock page_content %}
 
 {% block script %}

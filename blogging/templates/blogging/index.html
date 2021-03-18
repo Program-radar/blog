@@ -7,38 +7,38 @@
 {% endblock page_static %}
 
 {% block page_content %}
-                <div class="container header">
-                    <div class="row">
-                        <div class="col-2 first_item_header">
-                            <div class="header_writing">
-                                <h1>
-                                    write great articles<br />
-                                    read great articles
-                                </h1>
-                            </div>
-                            <div class="get_started">
-                                <a href="#">
-                                    <button
-                                        type="button"
-                                        class="important_reverse"
-                                    >
-                                        get started
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <!-- header svg -->
-                            <div class="header_illustration">
-                                <img
-                                    src="{% static 'index/header_svg/header.svg' %}"
-                                    alt="Header"
-                                    class="header_svg"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="container head">
+    <div class="row">
+        <div class="col-2 first_item_header">
+            <div class="header_writing">
+                <h1>
+                    write great articles<br />
+                    read great articles
+                </h1>
+            </div>
+            <div class="get_started">
+                <a href="#">
+                    <button
+                        type="button"
+                        class="important_reverse"
+                    >
+                        get started
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="col-2">
+            <!-- header svg -->
+            <div class="header_illustration">
+                <img
+                    src="{% static 'index/header_svg/header.svg' %}"
+                    alt="Header"
+                    class="header_svg"
+                />
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock page_content %}
 
 {% block script %}

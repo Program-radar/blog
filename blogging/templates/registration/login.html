@@ -1,0 +1,13 @@
+{% extends "blogging/base.html" %}
+{% block page_static %}
+        <title>Login | MehranBlog</title>
+{% endblock page_static %}
+
+{% block page_content %}
+<h1>Login</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" name="Login" value="Login">
+</form>
+{% endblock page_content %}

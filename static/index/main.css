@@ -14,11 +14,6 @@
     line-height: 70px;
     text-transform: capitalize;
 }
-@media only screen and (max-width: 450px) {
-    .header_writing {
-        font-size: 13px;
-    }
-}
 .get_started button {
     width: 180px;
     height: 50px;
@@ -50,4 +45,33 @@
         width: 85%;
         height: 85%;
     }
+}
+
+/* trending part */
+.trending-articles {
+    margin-top: 50px;
+}
+.trending_icon {
+    margin-left: 30px;
+    border-radius: 50%;
+    padding: 4px 4px 1px;
+    border: 1px solid #0b132a;
+}
+.trending_icon,
+.trending-articles h3 {
+    display: inline-block;
+}
+.article_summary {
+    margin: 30px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: auto auto;
+}
+.article_number {
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(194, 192, 192);
+}
+.article_description small {
+    margin-top: 20px;
 }

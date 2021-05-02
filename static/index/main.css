@@ -68,10 +68,16 @@
     grid-template-columns: auto auto;
 }
 .article_number {
-    font-size: 25px;
-    font-weight: bolder;
-    color: rgb(194, 192, 192);
+    font-size: 40px;
+    font-weight: 900px;
+    color: rgb(209, 204, 204);
 }
-.article_description small {
-    margin-top: 20px;
+.article_description > .article_author {
+    font-size: 15px;
+}
+.article_description > .article_title {
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: 900px;
+    margin-bottom: 8px;
 }
